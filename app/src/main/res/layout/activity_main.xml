@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tvTitulo"
+                  android:text="@string/money_converter"
+                  android:textSize="30sp"
+                  android:background="@color/color_gray"
+                  android:fontFamily="cursive"
+                  android:textColor="@color/color_blanco"
+                  android:textAlignment="center"/>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:gravity="center"
+                      android:background="@color/color_gray"
+                      android:orientation="vertical">
+
+            <EditText android:layout_width="match_parent"
+                      android:layout_height="36dp"
+                      android:id="@+id/etValor"
+                      android:textAlignment="center"
+                      android:inputType="number"
+                      android:background="@color/color_negro"
+                      android:textColor="@color/color_blanco"
+                      android:textColorHint="@color/color_blanco"
+                      android:hint="@string/ingrese_valor_a_convetir"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="center"
+                      android:background="@color/colorAccent"
+                      android:textColor="@color/color_negro"
+                      android:textSize="25sp"
+                      android:text="@string/de"/>
+            <Spinner android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/spnDe"
+                     android:textAlignment="center"
+                     android:gravity="center"></Spinner>
+            <ImageView android:layout_width="150dp"
+                       android:layout_height="150dp"
+                       android:id="@+id/imgDe"
+                       android:src="@mipmap/monedaicon"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tvDe"
+                      android:textAlignment="center"
+                      android:background="@color/colorAccent"
+                      android:textColor="@color/color_negro"
+                      android:textSize="25sp"
+                      android:text="@string/a"/>
+            <Spinner android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/spnA"
+                     android:textAlignment="center"
+                     android:gravity="center"></Spinner>
+            <ImageView android:layout_width="150dp"
+                       android:layout_height="150dp"
+                       android:id="@+id/imgA"
+                       android:src="@mipmap/monedaicon"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tvResultado"
+                      android:textAlignment="center"
+                      android:background="@color/colorAccent"
+                      android:textColor="@color/color_negro"
+                      android:textSize="20sp"
+                      android:text="@string/resultao"/>
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bnCalcular"
+                    android:text="@string/calcular"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/tvConversion"
+                      android:textColor="@color/color_blanco"
+                      android:textAlignment="center"
+                      android:background="@color/color_negro"
+                      android:textSize="30sp"
+                      android:text="@string/conversion"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

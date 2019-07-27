@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Conversor</string>
+    <string name="money_converter">Money Converter</string>
+    <string name="de">De:</string>
+    <string name="a">A:</string>
+    <string name="resultao">Resultao</string>
+    <string name="ingrese_valor_a_convetir">Ingrese el valor a convetir aquí!</string>
+    <string name="calcular">Calcular</string>
+    <string name="conversion">Conversión</string>
+</resources>
